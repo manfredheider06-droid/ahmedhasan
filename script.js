@@ -1,85 +1,6 @@
 'use strict';
 
-// ============================================================
-//   GOOGLE ANALYTICS NUR BEI ZUSTIMMUNG
-// ============================================================
-
-// === GOOGLE ANALYTICS SETUP (Wartet auf Zustimmung) ===
-
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){dataLayer.push(arguments);}
-
-// Standard: Analytics DISABLED
-gtag('consent', 'default', {
-  'analytics_storage': 'denied',
-  'ad_storage': 'denied'
-});
-
-gtag('js', new Date());
-
-// NICHT laden, bis Nutzer zustimmt!
-// gtag('config', 'G_XXXXXXXXXXXXX'); // Wird ERST geladen bei Zustimmung
-
-// ============================================================
-//   COOKIE CONSENT MANAGEMENT
-// ============================================================
-
-const cookieBanner = document.getElementById('cookie-banner');
-const cookieAccept = document.getElementById('cookie-accept');
-const cookieDecline = document.getElementById('cookie-decline');
-const analyticsCheckbox = document.getElementById('analytics-consent');
-
-// Prüfe, ob es bereits eine Zustimmung gibt
-const existingConsent = localStorage.getItem('analytics-consent');
-
-function saveConsent(analyticsEnabled) {
-  if (analyticsEnabled) {
-    console.log('✅ Google Analytics aktiviert');
-    localStorage.setItem('analytics-consent', 'true');
-    
-    // JETZT laden: Google Analytics Script
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G_XXXXXXXXXXXXX'; // 🔹 DEINE GA-ID!
-    document.head.appendChild(script);
-    
-    // Gebe Google Analytics Bescheid, dass es jetzt laufen kann
-    gtag('consent', 'update', {'analytics_storage': 'granted'});
-    gtag('config', 'G_XXXXXXXXXXXXX'); // 🔹 DEINE GA-ID!
-    
-  } else {
-    console.log('❌ Google Analytics NICHT aktiviert');
-    localStorage.setItem('analytics-consent', 'false');
-    gtag('consent', 'update', {'analytics_storage': 'denied'});
-  }
-  
-  // Cookie Banner verstecken
-  cookieBanner?.classList.add('hidden');
-}
-
-// Wenn Nutzer "Akzeptieren & weitergehen" klickt
-cookieAccept?.addEventListener('click', () => {
-  const analyticsConsent = analyticsCheckbox?.checked || false;
-  saveConsent(analyticsConsent);
-});
-
-// Wenn Nutzer "Nur notwendig" klickt
-cookieDecline?.addEventListener('click', () => {
-  console.log('⚠️ Nutzer hat nur notwendige Cookies akzeptiert (keine Analytics)');
-  saveConsent(false);
-});
-
-// Wenn Nutzer bereits eine Wahl getroffen hat
-if (existingConsent !== null) {
-  const analyticsWasAccepted = existingConsent === 'true';
-  saveConsent(analyticsWasAccepted);
-}
-
-// ============================================================
-//   THEME MANAGEMENT
-// ============================================================
-
+// === THEME ===
 const themeToggle = document.getElementById('theme-toggle');
 
 function setTheme(isDark) {
@@ -97,10 +18,54 @@ themeToggle?.addEventListener('click', () => {
   setTheme(!isDark);
 });
 
-// ============================================================
-//   NAVBAR & MOBILE MENU
-// ============================================================
+// === GOOGLE ANALYTICS CONSENT ===
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
 
+gtag('consent', 'default', {
+  'analytics_storage': 'denied',
+  'ad_storage': 'denied'
+});
+
+gtag('js', new Date());
+
+const cookieBanner = document.getElementById('cookie-banner');
+const cookieAccept = document.getElementById('cookie-accept');
+const cookieDecline = document.getElementById('cookie-decline');
+const analyticsCheckbox = document.getElementById('analytics-consent');
+
+const existingConsent = localStorage.getItem('analytics-consent');
+
+function saveConsent(analyticsEnabled) {
+  if (analyticsEnabled) {
+    localStorage.setItem('analytics-consent', 'true');
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G_XXXXXXXXXXXXX';
+    document.head.appendChild(script);
+    gtag('consent', 'update', {'analytics_storage': 'granted'});
+    gtag('config', 'G_XXXXXXXXXXXXX');
+  } else {
+    localStorage.setItem('analytics-consent', 'false');
+    gtag('consent', 'update', {'analytics_storage': 'denied'});
+  }
+  cookieBanner?.classList.add('hidden');
+}
+
+cookieAccept?.addEventListener('click', () => {
+  const analyticsConsent = analyticsCheckbox?.checked || false;
+  saveConsent(analyticsConsent);
+});
+
+cookieDecline?.addEventListener('click', () => {
+  saveConsent(false);
+});
+
+if (existingConsent !== null) {
+  saveConsent(existingConsent === 'true');
+}
+
+// === NAVBAR ===
 const navbar = document.getElementById('navbar');
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -112,7 +77,7 @@ window.addEventListener('scroll', () => {
   } else {
     navbar?.classList.remove('scrolled');
   }
-});
+}, { passive: true });
 
 menuToggle?.addEventListener('click', () => {
   mobileMenu.classList.toggle('open');
@@ -126,10 +91,7 @@ mobileLinks?.forEach(link => {
   });
 });
 
-// ============================================================
-//   SCROLL TOP BUTTON
-// ============================================================
-
+// === SCROLL TOP ===
 const scrollTopBtn = document.getElementById('scroll-top');
 
 window.addEventListener('scroll', () => {
@@ -138,16 +100,13 @@ window.addEventListener('scroll', () => {
   } else {
     scrollTopBtn?.classList.remove('show');
   }
-});
+}, { passive: true });
 
 scrollTopBtn?.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ============================================================
-//   CONTACT FORM
-// ============================================================
-
+// === CONTACT FORM ===
 const formSubmit = document.getElementById('form-submit');
 const formReset = document.getElementById('form-reset');
 const contactForm = document.getElementById('contact-form');
@@ -159,7 +118,7 @@ formSubmit?.addEventListener('click', () => {
   const message = document.getElementById('message')?.value.trim();
 
   if (!name || !email || !subject || !message) {
-    alert('❌ Bitte f��llen Sie alle erforderlichen Felder aus!');
+    alert('Bitte füllen Sie alle erforderlichen Felder aus!');
     return;
   }
 
@@ -176,16 +135,12 @@ formSubmit?.addEventListener('click', () => {
 
 formReset?.addEventListener('click', () => {
   contactForm.reset();
-  alert('↺ Formular zurückgesetzt!');
 });
 
-// ============================================================
-//   FOOTER YEAR
-// ============================================================
-
+// === FOOTER YEAR ===
 const yearEl = document.getElementById('year');
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-console.log('✅ Portfolio mit Google Analytics Consent geladen');
+console.log('✅ Portfolio geladen - Mobile optimiert, kein Horizontal Scroll');
