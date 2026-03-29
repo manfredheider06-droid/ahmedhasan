@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed Hasan – Unternehmensberater & Webstrategie-Experte." />
+  <meta name="theme-color" content="#ffffff" id="meta-theme-color">
+  
+  <title>Ahmed Hasan – Unternehmensberater & Webstrategie-Experte</title>
+  
+  <link rel="icon" href="IMG_9596.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="IMG_9596.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- COOKIE BANNER mit Analytics Checkbox -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-header">
+      <h3> Cookies & Datenschutz</h3>
+    </div>
+
+    <div class="cookie-text">
+      <p>Wir nutzen <strong>nur notwendige Cookies</strong>. Optional nutzen wir <strong>Google Analytics</strong> zur Website-Verbesserung.</p>
+    </div>
+
+    <div class="cookie-options">
+      <label class="cookie-checkbox">
+        <input type="checkbox" id="analytics-consent" />
+        <span>📊 Google Analytics aktivieren (optional)</span>
+      </label>
+    </div>
+
+    <div class="cookie-actions">
+      <a href="datenschutz.html" class="cookie-link">📋 Datenschutz</a>
+      <button id="cookie-decline" class="btn btn-secondary btn-sm">✕ Nur notwendig</button>
+      <button id="cookie-accept" class="btn btn-primary btn-sm">✓ Akzeptieren & weitergehen</button>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-brand">
+      <img src="IMG_9596.jpg" alt="AH Logo" class="nav-logo" />
+      <span>Ahmed Hasan</span>
+    </a>
+    
+    <ul class="nav-menu">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#experience">Erfahrung</a></li>
+      <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-btn">☀️</button>
+      <button id="menu-toggle" class="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#about">Über mich</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#projects">Projekte</a>
+  <a href="#experience">Erfahrung</a>
+  <a href="#contact">Kontakt</a>
+</div>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="hero-badge">Unternehmensberater & Webstrategie-Experte</div>
+      
+      <h1 class="hero-title">
+        Ich helfe Unternehmen,<br>
+        ihre digitale Präsenz<br>
+        in <span class="highlight">messbaren Umsatz</span><br>
+        zu verwandeln.
+      </h1>
+      
+      <p class="hero-subtitle">
+        Mit 99+ realisierten Projekten und internationaler Erfahrung entwickle ich digitale Systeme, die nicht nur gut aussehen — sondern Wachstum erzeugen und Prozesse skalieren.
+      </p>
+
+      <div class="hero-ctas">
+        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">📅 Gespräch vereinbaren</button>
+        <button class="btn btn-secondary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">→ Projekte ansehen</button>
+        <button class="btn btn-outline">⬇ Profil herunterladen</button>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">99+</div>
+          <div class="stat-label">Projekte</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Kontinente</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Sprachen</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Zufriedenheit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="IMG_9595.jpg" alt="Ahmed Hasan" />
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section about">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-label">📍 ÜBER MICH</span>
+      <h2>Strategie vor Technologie</h2>
+    </div>
+
+    <div class="about-content">
+      <div class="about-text">
+        <p class="about-lead">
+          Ich bin kein typischer IT-Techniker. Ich bin ein Unternehmer, der Technologie strategisch nutzt, um Geschäftsergebnisse zu erzielen.
+        </p>
+
+        <p>
+          Mit über 99 realisierten Projekten und einem Netzwerk aus spezialisierten Experten verstehe ich, was Unternehmen wirklich brauchen: nicht die neueste Technologie, sondern die <strong>richtige Lösung für Ihr Business</strong>.
+        </p>
+
+        <p>
+          Meine Kunden sind etablierte Unternehmen, die ihre digitale Präsenz skalieren, Prozesse optimieren und neue Marktpotenziale erschließen möchten. Ich arbeite langfristig — nicht für schnelle Projekte, sondern für <strong>nachhaltiges Wachstum</strong> und echte Geschäftsergebnisse.
+        </p>
+
+        <div class="about-actions">
+          <button class="btn btn-primary">Mehr erfahren</button>
+          <button class="btn btn-secondary">📊 Statistiken anzeigen</button>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <div class="card-icon">🎯</div>
+          <h3>Strategie vor Technik</h3>
+          <p>Technologie ist Mittel, nicht Zweck. Ich beginne mit Ihrer Business-Strategie und entwickle maßgeschneiderte Lösungen.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">📈</div>
+          <h3>Ergebnisse, die zählen</h3>
+          <p>ROI, Conversion, Umsatzsteigerung — nicht Buzzwords. Das ist, was für Ihr Unternehmen wirklich zählt.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🤝</div>
+          <h3>Langfristige Partnerschaften</h3>
+          <p>Ich arbeite mit Kunden zusammen, mit denen ich wachse — nicht einmalige Projekte, sondern echte Beziehungen.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">🌍</div>
+          <h3>International & Erfahren</h3>
+          <p>Erfahrung in Deutschland, Spanien, Ungarn und Nahost. Kulturelle und technische Kompetenz auf höchstem Niveau.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE SECTION -->
+<section id="expertise" class="section expertise">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-label">💼 EXPERTISE</span>
+      <h2>Was ich für Ihr Unternehmen leiste</h2>
+      <p class="section-subtitle">Vier Kernleistungen, die Ihr Business voranbringen</p>
+    </div>
+
+    <div class="expertise-cards">
+      <div class="exp-card">
+        <div class="exp-number">01</div>
+        <div class="exp-icon">🎯</div>
+        <h3>Digitale Strategie & Beratung</h3>
+        <p>Ich analysiere Ihre aktuelle digitale Situation und entwickle einen klaren, messbaren Fahrplan für nachhaltiges Wachstum — von der Marktpositionierung bis zur Skalierung.</p>
+        <ul class="exp-list">
+          <li>✓ Business-Analyse & Strategie</li>
+          <li>✓ Marktpositionierung & Branding</li>
+          <li>✓ Go-to-Market Strategie</li>
+          <li>✓ Wettbewerbsanalyse</li>
+        </ul>
+        <button class="btn btn-sm btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Anfragen →</button>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-number">02</div>
+        <div class="exp-icon">🌐</div>
+        <h3>Webentwicklung & Systeme</h3>
+        <p>Hochperformante Websites und maßgeschneiderte Web-Applikationen, die nicht nur ästhetisch überzeugen, sondern Ihre Geschäftsziele direkt unterstützen.</p>
+        <ul class="exp-list">
+          <li>✓ Corporate Websites</li>
+          <li>✓ Web-Applikationen</li>
+          <li>✓ E-Commerce Systeme</li>
+          <li>✓ Performance & Sicherheit</li>
+        </ul>
+        <button class="btn btn-sm btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Anfragen →</button>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-number">03</div>
+        <div class="exp-icon">🔧</div>
+        <h3>IT-Infrastruktur & Prozesse</h3>
+        <p>Robuste, skalierbare IT-Systeme und optimierte Geschäftsprozesse, die Ihre Organisation zukunftssicher machen und Effizienz steigern.</p>
+        <ul class="exp-list">
+          <li>✓ Infrastruktur-Design</li>
+          <li>✓ Systemintegration</li>
+          <li>✓ Prozessoptimierung</li>
+          <li>✓ IT-Sicherheit & Compliance</li>
+        </ul>
+        <button class="btn btn-sm btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Anfragen →</button>
+      </div>
+
+      <div class="exp-card highlight">
+        <div class="exp-number">04</div>
+        <div class="exp-icon">🚀</div>
+        <h3>Executive Consulting</h3>
+        <p>Für Unternehmen, die einen strategischen Partner auf C-Level brauchen. Full-Service Beratung, Projektleitung und langfristige Betreuung.</p>
+        <ul class="exp-list">
+          <li>✓ Strategische Beratung</li>
+          <li>✓ Projektleitung & Umsetzung</li>
+          <li>✓ Netzwerk & Ressourcen</li>
+          <li>✓ Langfristige Betreuung</li>
+        </ul>
+        <button class="btn btn-sm btn-light" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Jetzt Termin →</button>
+      </div>
+    </div>
+
+    <div class="expertise-cta">
+      <h3>Unsicher, welche Leistung für Sie passt?</h3>
+      <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">📞 Kostenlose Beratung buchen</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-label">🏆 PROJEKTE</span>
+      <h2>Ausgewählte Erfolge</h2>
+      <p class="section-subtitle">99+ erfolgreiche Transformationen für etablierte Unternehmen</p>
+    </div>
+
+    <div class="projects-list">
+      <div class="project featured">
+        <div class="project-header">
+          <span class="project-tag">Digitale Transformation</span>
+          <span class="project-year">Laufend</span>
+        </div>
+        <h3>99+ Unternehmenstransformationen</h3>
+        <p>Vollständige digitale Transformationen für Mittelständler und Enterprise-Kunden. Von strategischer Analyse bis zur kompletten Digitalisierung von Geschäftsbereichen. Fokus auf messbare Ergebnisse und nachhaltige Veränderung.</p>
+        
+        <div class="project-results">
+          <div class="pr-item">
+            <span class="pr-value">99+</span>
+            <span class="pr-label">Erfolgreiche Projekte</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-value">↑ 300%</span>
+            <span class="pr-label">Durchschnittliche Effizienzsteigerung</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-value">18</span>
+            <span class="pr-label">Verschiedene Branchen</span>
+          </div>
+          <div class="pr-item">
+            <span class="pr-value">3</span>
+            <span class="pr-label">Kontinente</span>
+          </div>
+        </div>
+
+        <div class="project-tags">
+          <span>Strategy</span>
+          <span>Development</span>
+          <span>Scaling</span>
+          <span>Enterprise</span>
+        </div>
+
+        <button class="btn btn-primary">📋 Detailliertes Portfolio anfordern</button>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-tag">Unternehmertum</span>
+          <span class="project-year">2022 – heute</span>
+        </div>
+        <h3>Aufbau eines Entwickler-Netzwerks</h3>
+        <p>Gründung und Management eines erfolgreichen Netzwerks aus 50+ spezialisierten Entwicklern, Designern und IT-Experten. Gemeinsam realisieren wir komplexe Enterprise-Projekte mit kombinierter Expertise und unbegrenzten Ressourcen.</p>
+        <div class="project-tags">
+          <span>Leadership</span>
+          <span>Team-Building</span>
+          <span>Enterprise Sales</span>
+          <span>Skalierung</span>
+        </div>
+        <button class="btn btn-outline">Mehr Info →</button>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-tag">International</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h3>IT-Projekte in 3 Ländern</h3>
+        <p>Leitung von IT-Infrastruktur- und Beratungsprojekten in Deutschland, Spanien und Ungarn. Direkte Verantwortung auf C-Level, Stakeholder-Management und erfolgreiche Implementierung in internationalem Kontext.</p>
+        <div class="project-tags">
+          <span>International</span>
+          <span>Stakeholder-Management</span>
+          <span>C-Level</span>
+        </div>
+        <button class="btn btn-outline">Mehr Info →</button>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-tag">Digital Marketing</span>
+          <span class="project-year">Laufend</span>
+        </div>
+        <h3>SEO & Marktpositionierung</h3>
+        <p>Strategische Positionierung und organische Sichtbarkeitssteigerung für Unternehmenskunden. Kombination aus technischer SEO, Content-Strategie und Business-Development für nachhaltiges Wachstum.</p>
+        <div class="project-tags">
+          <span>SEO</span>
+          <span>Content Strategy</span>
+          <span>Market Positioning</span>
+        </div>
+        <button class="btn btn-outline">Anfragen →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="section experience">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-label">📚 ERFAHRUNG</span>
+      <h2>Beruflicher Werdegang</h2>
+      <p class="section-subtitle">Von der Ausbildung zum erfolgreichen Unternehmer</p>
+    </div>
+
+    <div class="experience-list">
+      <div class="exp-item">
+        <div class="exp-year">2022 – Heute</div>
+        <div class="exp-marker"></div>
+        <div class="exp-details">
+          <span class="exp-badge">Gründer & CEO</span>
+          <h3>Vopelo – Digitale Systeme & Business Consulting</h3>
+          <p>Aufbau und Leitung eines erfolgreichen Beratungs- und Entwicklungsunternehmens. Verantwortung für 99+ Projekte, Kundenakquisition, Projektmanagement und Führung eines internationalen Netzwerks von Spezialisten.</p>
+          <div class="exp-stats">
+            <span>99+ Projekte</span>
+            <span>50+ Partner</span>
+            <span>18 Branchen</span>
+            <span>International tätig</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-year">2024</div>
+        <div class="exp-marker"></div>
+        <div class="exp-details">
+          <span class="exp-badge">International</span>
+          <h3>IT-Beratung & Infrastruktur – Südeuropa</h3>
+          <p>Internationale Projekte in Valencia (Spanien) und Túrkeve (Ungarn). Planung, Implementierung und Management von IT-Infrastruktur-Lösungen mit direkter Verantwortung gegenüber Geschäftsführung und C-Level.</p>
+          <div class="exp-stats">
+            <span>Enterprise-Projekte</span>
+            <span>Stakeholder-Management</span>
+            <span>Multi-Country</span>
+            <span>C-Level</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-year">2023 – Heute</div>
+        <div class="exp-marker"></div>
+        <div class="exp-details">
+          <span class="exp-badge">Ausbildung</span>
+          <h3>Informationstechnischer Assistent (ITA)</h3>
+          <p>Formale Ausbildung in Softwareentwicklung, Systemadministration und IT-Infrastruktur mit Fokus auf praxisnahe Enterprise-Anwendungen und professionelle Best Practices.</p>
+          <div class="exp-stats">
+            <span>Softwareentwicklung</span>
+            <span>Systemadministration</span>
+            <span>IT-Infrastruktur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-year">Laufend</div>
+        <div class="exp-marker"></div>
+        <div class="exp-details">
+          <span class="exp-badge">Weiterbildung</span>
+          <h3>Professionelle Backend-Entwicklung</h3>
+          <p>Kontinuierliche Weiterbildung in modernen Backend-Technologien, Best Practices und Best Practices für skalierbare Enterprise-Systeme und zukunftssichere Lösungen.</p>
+          <div class="exp-stats">
+            <span>Backend-Technologien</span>
+            <span>Systemdesign</span>
+            <span>Enterprise Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="section-top">
+      <span class="section-label">💬 KONTAKT</span>
+      <h2>Lassen Sie uns sprechen</h2>
+      <p class="section-subtitle">Ich bin offen für strategische Partnerschaften und neue Projekte</p>
+    </div>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <h3>Direktkontakt</h3>
+        <p>
+          Kontaktieren Sie mich für eine unverbindliche Beratung. Ich antworte persönlich und nehme mir Zeit, Ihr Anliegen zu verstehen.
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="method-icon">📧</div>
+            <div>
+              <span class="method-label">E-Mail</span>
+              <a href="mailto:ahmedhasan@mail.de">ahmedhasan@mail.de</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">📱</div>
+            <div>
+              <span class="method-label">Telefon</span>
+              <a href="tel:+491772851043">+49 177 285 1043</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="method-icon">📍</div>
+            <div>
+              <span class="method-label">Standort</span>
+              <span>Gummersbach, NRW, Deutschland</span>
+            </div>
+          </div>
+
+          <div class="contact-method available">
+            <div class="method-icon">🟢</div>
+            <div>
+              <span class="method-label">Verfügbarkeit</span>
+              <span>Offen für neue Projekte</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <button class="social-btn">💼 LinkedIn</button>
+          <button class="social-btn">🔗 GitHub</button>
+          <button class="social-btn">💬 WhatsApp</button>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" id="name" required placeholder="Vor- und Nachname" />
+          </div>
+          <div class="form-group">
+            <label>Unternehmen</label>
+            <input type="text" id="company" placeholder="Ihr Unternehmen" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>E-Mail *</label>
+            <input type="email" id="email" required placeholder="Sie@example.de" />
+          </div>
+          <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" id="phone" placeholder="+49..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Betreff *</label>
+          <input type="text" id="subject" required placeholder="z.B. Digitale Transformation meines Unternehmens" />
+        </div>
+
+        <div class="form-group">
+          <label>Ihre Nachricht *</label>
+          <textarea id="message" rows="6" required placeholder="Erzählen Sie mir von Ihrem Anliegen..."></textarea>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" required />
+          <span>Ich akzeptiere die <a href="datenschutz.html">Datenschutzerklärung</a></span>
+        </label>
+
+        <p class="form-note">💡 Dieses Formular öffnet Ihren E-Mail-Client — keine Datenspeicherung</p>
+
+        <div class="form-buttons">
+          <button type="button" class="btn btn-primary btn-full" id="form-submit">✉️ Nachricht senden</button>
+          <button type="button" class="btn btn-secondary btn-full" id="form-reset">↺ Zurücksetzen</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="IMG_9596.jpg" alt="AH" class="footer-logo" />
+        <div>
+          <h3>Ahmed Hasan</h3>
+          <p>Unternehmensberater · Webstrategie-Experte · Gründer</p>
+        </div>
+      </div>
+
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h4>Seiten</h4>
+          <ul>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#expertise">Strategie & Beratung</a></li>
+            <li><a href="#expertise">Webentwicklung</a></li>
+            <li><a href="#expertise">IT-Infrastruktur</a></li>
+            <li><a href="#expertise">Executive Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Ahmed Hasan. Alle Rechte vorbehalten.</p>
+      <p>Gummersbach, Deutschland | DSGVO konform</p>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL TOP -->
+<button id="scroll-top" class="scroll-top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
