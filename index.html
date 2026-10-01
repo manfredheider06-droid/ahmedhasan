@@ -3,164 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT-Entwicklung & Infrastruktur</title>
+    <meta name="description" content="Ahmed Hasan entwickelt digitale Produkte, sichere Infrastrukturen und starke Web-Erlebnisse.">
+    <title>Ahmed Hasan — Softwareentwickler & IT-Stratege</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <img src="IMG_9596.jpg" alt="Logo" class="logo">
-            <div class="nav-links">
-                <a href="#about">Über mich</a>
-                <a href="#skills">Tech-Stack</a>
-                <a href="#milestones">Erfolge</a>
-                <a href="#expertise">Expertise</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="glow-bg"></div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-ring"></div>
-                <img src="EA495259-E2A7-41BA-8DEA-850DEBAD7AAD.PNG" alt="Profilbild" class="profile-pic">
-            </div>
-            <h1 class="typing-text">Fullstack. Server. <span class="highlight">Lösungen.</span></h1>
-            <h2>Softwareentwickler & IT-Berater</h2>
-            <p class="hero-subtitle">Leidenschaftlicher Entwickler mit Fokus auf C#, Fullstack-Webentwicklung, Datenbanken und sicheres Server-Hosting.</p>
-            <a href="#expertise" class="cta-button">Meine Arbeit entdecken</a>
-        </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Ahmed Hasan Startseite"><img src="EA495259-E2A7-41BA-8DEA-850DEBAD7AAD.PNG" alt="Ahmed Hasan" class="brand-mark"><span>AH<span class="brand-dot">.</span></span></a>
+        <nav class="nav-links" aria-label="Hauptnavigation"><a href="#about">Profil</a><a href="#skills">Stack</a><a href="#expertise">Expertise</a></nav>
+        <a class="header-contact" href="mailto:ahmedhasan@mail.de">Kontakt <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section fade-in">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text-box glass-card">
-                        <i class="fas fa-terminal quote-icon"></i>
-                        <p><strong>Hi, ich bin Entwickler und IT-Allrounder.</strong></p>
-                        <p>Schon früh habe ich meine Begeisterung für Code, Server und Problemlösungen entdeckt. In der Vergangenheit habe ich die Agentur <em>Vopelo</em> geleitet und dort wertvolle Praxis-Erfahrungen im Projektmanagement und der direkten Kundenbetreuung gesammelt. Nachdem dieses Kapitel erfolgreich abgeschlossen war, habe ich mich voll und ganz auf das konzentriert, was mir am meisten Spaß macht: solide, technische Handwerkskunst.</p>
-                        <p>Mein Fokus liegt heute auf der Entwicklung durchdachter Webanwendungen im Frontend und Backend. Ich programmiere in C# und JavaScript, baue relationale SQL-Datenbanken auf und kenne mich tiefgehend mit Betriebssystemen aus. Für mich hört IT nicht beim Code auf – ich baue Server-Infrastrukturen auf, helfe Leuten und Unternehmen, ihre Projekte sicher zu hosten, und führe freiwillige Sicherheitsanalysen durch, um Fehler in bestehenden Webseiten zu finden und zu beheben.</p>
-                    </div>
-                </div>
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-grid-bg" aria-hidden="true"></div>
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="status-dot"></span> Softwareentwicklung · Infrastruktur · Systeme</p>
+                <h1>Ich mache aus<br><em>Ideen</em> <span class="outline-word">Systeme.</span></h1>
+                <p class="hero-text">Ahmed Hasan ist Softwareentwickler und IT-Allrounder mit einem Blick für den gesamten Weg: vom ersten Interface bis zum stabilen Server im Hintergrund.</p>
+                <div class="hero-actions"><a href="#expertise" class="button button-primary">Arbeit entdecken <i class="fa-solid fa-arrow-down"></i></a><a href="mailto:ahmedhasan@mail.de" class="text-link">Projekt besprechen <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
             </div>
+            <div class="hero-visual reveal reveal-delay" aria-label="Profil von Ahmed Hasan">
+                <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+                <div class="portrait-frame"><div class="portrait-label">AH / 2026</div><img src="EA495259-E2A7-41BA-8DEA-850DEBAD7AAD.PNG" alt="Porträt von Ahmed Hasan" class="portrait"></div>
+                <div class="floating-note note-top"><span>01</span><strong>Build with intent.</strong></div><div class="floating-note note-bottom"><i class="fa-solid fa-location-crosshairs"></i> Gummersbach, DE</div>
+            </div>
+            <div class="scroll-cue"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></div>
         </section>
 
-        <!-- Tech Stack & Skills -->
-        <section id="skills" class="section alt-bg fade-in">
-            <div class="container">
-                <h2 class="section-title">Technologischer <span class="highlight">Stack</span></h2>
-                <p class="section-desc">Vom robusten Code über strukturierte Datenbanken bis hin zur Servereinrichtung.</p>
-                
-                <div class="skills-grid">
-                    <div class="skill-card glass-card">
-                        <i class="fa-solid fa-laptop-code skill-icon"></i>
-                        <h3>C# & Fullstack</h3>
-                        <p>Webentwicklung von A bis Z. Robuste Backend-Logik (C#, Python) gepaart mit interaktiven Frontends (JavaScript) für optimale Nutzbarkeit.</p>
-                    </div>
-                    <div class="skill-card glass-card">
-                        <i class="fa-solid fa-database skill-icon"></i>
-                        <h3>SQL & Datenbanken</h3>
-                        <p>Planung, Aufbau und Optimierung von Datenbanken. Sicherer Umgang mit Datenstrukturen und effizienten Abfragen.</p>
-                    </div>
-                    <div class="skill-card glass-card">
-                        <i class="fa-solid fa-server skill-icon"></i>
-                        <h3>Server & Hosting</h3>
-                        <p>Betriebssysteme, Netzwerke und Serveraufbau. Ich unterstütze meine Kunden dabei, ihre Systeme zuverlässig, performant und absolut sicher zu hosten.</p>
-                    </div>
-                    <div class="skill-card glass-card">
-                        <i class="fa-solid fa-bug skill-icon"></i>
-                        <h3>Bug-Hunting & QA</h3>
-                        <p>Freiwillige Analysen für Unternehmen: Ich spüre Fehler in Webseiten auf, zeige Schwachstellen und helfe, die IT-Sicherheit deutlich zu verbessern.</p>
-                    </div>
-                </div>
-            </div>
+        <section id="about" class="section-shell about-section">
+            <div class="section-intro reveal"><span class="section-number">01 / 04</span><p class="eyebrow">Das Profil</p></div>
+            <div class="about-layout"><h2 class="display-title reveal">Technik, die<br><em>weiterdenkt.</em></h2><div class="about-copy reveal reveal-delay"><p class="lead"><strong>Hi, ich bin Entwickler und IT-Allrounder.</strong> Schon früh habe ich meine Begeisterung für Code, Server und Problemlösungen entdeckt.</p><p>In der Vergangenheit habe ich die Agentur <em>Vopelo</em> geleitet und dort wertvolle Praxis-Erfahrungen im Projektmanagement und der direkten Kundenbetreuung gesammelt. Nachdem dieses Kapitel erfolgreich abgeschlossen war, habe ich mich voll und ganz auf das konzentriert, was mir am meisten Spaß macht: solide, technische Handwerkskunst.</p><p>Mein Fokus liegt heute auf der Entwicklung durchdachter Webanwendungen im Frontend und Backend. Ich programmiere in C# und JavaScript, baue relationale SQL-Datenbanken auf und kenne mich tiefgehend mit Betriebssystemen aus. Für mich hört IT nicht beim Code auf: Ich baue Server-Infrastrukturen auf, helfe Leuten und Unternehmen, ihre Projekte sicher zu hosten, und führe freiwillige Sicherheitsanalysen durch, um Fehler in bestehenden Webseiten zu finden und zu beheben.</p></div></div>
+            <div class="principles reveal"><div><span>01</span><h3>Klarheit</h3><p>Komplexe Aufgaben werden zu verständlichen Lösungen.</p></div><div><span>02</span><h3>Substanz</h3><p>Sauberer Code, der heute funktioniert und morgen trägt.</p></div><div><span>03</span><h3>Verantwortung</h3><p>Digitale Systeme brauchen Sicherheit und Verlässlichkeit.</p></div></div>
         </section>
 
-        <!-- Milestones Section -->
-        <section id="milestones" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Erfahrung in <span class="highlight">Zahlen</span></h2>
-                <div class="stats-grid">
-                    <div class="stat-card glass-card">
-                        <h3 class="counter" data-target="400">0</h3>
-                        <p class="stat-label">Zufriedene Kunden</p>
-                        <p class="stat-desc">Denen ich mit Webseiten und soliden IT-Lösungen geholfen habe, ihr Unternehmen zu digitalisieren.</p>
-                    </div>
-                    <div class="stat-card glass-card">
-                        <h3 class="counter" data-target="40">0</h3>
-                        <p class="stat-label">Gastro-Kassensysteme</p>
-                        <p class="stat-desc">Komplexe Hardware erfolgreich verkauft, konfiguriert und nahtlos vor Ort integriert.</p>
-                    </div>
-                    <div class="stat-card glass-card">
-                        <h3>100<span class="percent">%</span></h3>
-                        <p class="stat-label">Systemstabilität</p>
-                        <p class="stat-desc">Fokus auf sicheres Hosting, ausfallsichere Server und fehlerfreien Code.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="skills" class="dark-section"><div class="section-shell"><div class="section-heading reveal"><div><span class="section-number">02 / 04</span><p class="eyebrow">Das Werkzeug</p></div><h2>Mein <em>Stack</em></h2></div><div class="skills-list">
+            <article class="skill-row reveal"><span class="skill-index">01</span><i class="fa-solid fa-code"></i><div><h3>Fullstack Development</h3><p>C#, Python & JavaScript — robuste Backends und Frontends, die sich gut anfühlen.</p></div><span class="skill-arrow">↗</span></article>
+            <article class="skill-row reveal"><span class="skill-index">02</span><i class="fa-solid fa-database"></i><div><h3>SQL & Datenbanken</h3><p>Strukturierte Daten, effiziente Abfragen und Systeme, die mitwachsen.</p></div><span class="skill-arrow">↗</span></article>
+            <article class="skill-row reveal"><span class="skill-index">03</span><i class="fa-solid fa-server"></i><div><h3>Server & Hosting</h3><p>Betriebssysteme, Netzwerke und sichere Infrastruktur für den Alltag.</p></div><span class="skill-arrow">↗</span></article>
+            <article class="skill-row reveal"><span class="skill-index">04</span><i class="fa-solid fa-shield-halved"></i><div><h3>QA & Bug-Hunting</h3><p>Freiwillige Sicherheitsanalysen, klare Befunde und bessere Produkte.</p></div><span class="skill-arrow">↗</span></article>
+        </div></div></section>
 
-        <!-- Expertise Section -->
-        <section id="expertise" class="section alt-bg fade-in">
-            <div class="container">
-                <h2 class="section-title">Projekte & <span class="highlight">Praxis</span></h2>
-                <div class="expertise-grid">
-                    
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <h4>Webentwicklung & Code</h4>
-                        </div>
-                        <p>Ich schreibe sauberen, wartbaren Code. Mit Erfahrung aus über 400 Webprojekten erstelle ich nicht einfach nur Layouts, sondern tief durchdachte Webanwendungen – egal ob es um komplexe Datenbankanbindungen oder schnelle Ladezeiten geht.</p>
-                    </div>
+        <section id="milestones" class="section-shell numbers-section"><div class="section-intro reveal"><span class="section-number">03 / 04</span><p class="eyebrow">Die Bilanz</p></div><div class="numbers-grid"><div class="number-item reveal"><strong class="counter" data-target="400">0</strong><span>+</span><p>zufriedene Kunden</p></div><div class="number-item reveal reveal-delay"><strong class="counter" data-target="40">0</strong><span>+</span><p>Gastro-Kassensysteme</p></div><div class="number-item reveal reveal-delay-2"><strong>100</strong><span>%</span><p>Systemstabilität</p></div></div></section>
 
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <h4>Sicheres Hosting & IT-Support</h4>
-                        </div>
-                        <p>Viele haben eine gute Website, aber das Hosting ist unsicher. Ich berate und helfe beim Serveraufbau, konfiguriere Betriebssysteme richtig und sorge dafür, dass die Daten von Unternehmen sicher vor Angriffen sind.</p>
-                    </div>
+        <section id="expertise" class="dark-section expertise-section"><div class="section-shell"><div class="section-heading reveal"><div><span class="section-number">04 / 04</span><p class="eyebrow">Die Praxis</p></div><h2>Was ich <em>bewege.</em></h2></div><div class="expertise-grid">
+            <article class="expertise-card reveal"><span class="card-number">01</span><i class="fa-solid fa-network-wired"></i><h3>Webentwicklung & Code</h3><p>Sauberer, wartbarer Code. Mit Erfahrung aus über 400 Webprojekten erstelle ich durchdachte Webanwendungen — von der Datenbank bis zur Ladezeit.</p></article>
+            <article class="expertise-card reveal reveal-delay"><span class="card-number">02</span><i class="fa-solid fa-shield-halved"></i><h3>Sicheres Hosting</h3><p>Viele haben eine gute Website, aber das Hosting ist unsicher. Ich berate beim Serveraufbau, konfiguriere Betriebssysteme richtig und sorge für geschützte Unternehmensdaten.</p></article>
+            <article class="expertise-card reveal"><span class="card-number">03</span><i class="fa-brands fa-tiktok"></i><h3>Social Media & Management</h3><p>Durch meine frühere Arbeit im Influencer-Management habe ich Künstlern und Sängern geholfen, ihre Reichweite auf TikTok und Instagram organisch aufzubauen und sich als Marke zu positionieren.</p></article>
+            <article class="expertise-card reveal reveal-delay"><span class="card-number">04</span><i class="fa-solid fa-cash-register"></i><h3>Systemintegration</h3><p>Die Installation von 40 hochkomplexen Kassensystemen in der Gastronomie zeigt: Ich integriere Hardware, richte Netzwerke ein und schule Kunden direkt vor Ort.</p></article>
+        </div></div></section>
 
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <i class="fa-brands fa-tiktok"></i>
-                            <h4>Social Media & Management</h4>
-                        </div>
-                        <p>Technik ist nicht alles. Durch meine frühere Arbeit im Influencer-Management habe ich Künstlern und Sängern dabei geholfen, ihre Reichweite auf TikTok und Instagram organisch aufzubauen und sich als Marke zu positionieren.</p>
-                    </div>
-
-                    <div class="expertise-box">
-                        <div class="expertise-header">
-                            <i class="fa-solid fa-cash-register"></i>
-                            <h4>Systemintegration (Hardware)</h4>
-                        </div>
-                        <p>Die Installation von 40 hochkomplexen Kassensystemen in der Gastronomie zeigt: Ich kann nicht nur programmieren, sondern auch Hardware integrieren, Netzwerke einrichten und Kunden direkt vor Ort schulen.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container text-center">
-            <img src="IMG_9596.jpg" alt="Logo" class="footer-logo">
-            <p>&copy; 2026. Handgemachter Code & sichere Systeme.</p>
-            <div class="footer-links">
-                <a href="Impressum.html">Impressum</a>
-                <span class="divider">|</span>
-                <a href="datenschutz.html">Datenschutz</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        <section class="closing-section section-shell reveal"><img src="EA495259-E2A7-41BA-8DEA-850DEBAD7AAD.PNG" alt="Ahmed Hasan Signet" class="closing-mark"><p class="eyebrow">Bereit für den nächsten Schritt?</p><h2>Let’s build something<br><em>remarkable.</em></h2><a href="mailto:ahmedhasan@mail.de" class="button button-primary">Kontakt aufnehmen <i class="fa-solid fa-arrow-up-right-from-square"></i></a></section>
++    </main>
++
++    <footer class="site-footer"><div class="section-shell footer-top"><a class="brand" href="#top"><img src="EA495259-E2A7-41BA-8DEA-850DEBAD7AAD.PNG" alt="Ahmed Hasan" class="brand-mark"><span>AH<span class="brand-dot">.</span></span></a><p>Handgemachter Code & sichere Systeme.</p><a href="mailto:ahmedhasan@mail.de">ahmedhasan@mail.de <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="section-shell footer-bottom"><span>© 2026 Ahmed Hasan</span><div><a href="Impressum.html">Impressum</a><a href="Datenschutz.html">Datenschutz</a></div><span>Designed & built with intent</span></div></footer>
++    <script src="script.js"></script>
++</body>
++</html>
